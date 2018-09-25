@@ -28,10 +28,10 @@ function draw() {
       arc(600+pmouseX/16, pmouseY/16+100+400, 280, 280, PI, TWO_PI);
 
       rectMode(CENTER);
-      fill(255,255,255);
+      fill(200);
       rect(600+pmouseX/16,pmouseY/16+100+340,120,200,20);
 
-      fill(180);
+      fill(255);
       rect(600+pmouseX/16,pmouseY/16+100+340,100,180,12);
 
 

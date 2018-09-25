@@ -23,21 +23,33 @@ function draw() {
    // Antennas
 
    // Body
-   rectMode(CENTER);
+      noStroke();
       fill(192);
       arc(600+pmouseX/16, pmouseY/16+100+400, 280, 280, PI, TWO_PI);
 
+      rectMode(CENTER);
       fill(255,255,255);
       rect(600+pmouseX/16,pmouseY/16+100+340,120,200,20);
+
+      fill(180);
+      rect(600+pmouseX/16,pmouseY/16+100+340,100,180,12);
 
 
    // Head
       // antennas
       stroke(255,255,255)
-      line(pmouseX-100,pmouseY-100,pmouseX-10,pmouseY-10)
+      line(pmouseX-0,pmouseY-100,pmouseX-0,pmouseY-10)
 
-      stroke(255,255,255)
-      line(pmouseX+100,pmouseY-100,pmouseX-10,pmouseY-10)
+      fill(255,255,255)
+      ellipse(pmouseX-0,pmouseY-80,12)
+
+      fill(180)
+      ellipse(pmouseX-0,pmouseY-80,6)
+
+      // head wings
+      noStroke();
+      arc(pmouseX-0,pmouseY+20,200, 50, PI, TWO_PI);
+
       // white circle
       noStroke();
       fill(255,255,255)
